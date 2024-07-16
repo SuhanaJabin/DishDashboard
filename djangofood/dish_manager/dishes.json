@@ -1,0 +1,52 @@
+[
+  {
+    "model": "dishes.dish",
+    "pk": 1,
+    "fields": {
+      "dishId": "1",
+      "dishName": "Jeera Rice",
+      "imageUrl": "https://nosh-assignment.s3.ap-south-1.amazonaws.com/jeera-rice.jpg",
+      "isPublished": true
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 2,
+    "fields": {
+      "dishId": "2",
+      "dishName": "Paneer Tikka",
+      "imageUrl": "https://nosh-assignment.s3.ap-south-1.amazonaws.com/paneer-tikka.jpg",
+      "isPublished": true
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 3,
+    "fields": {
+      "dishId": "3",
+      "dishName": "Rabdi",
+      "imageUrl": "https://nosh-assignment.s3.ap-south-1.amazonaws.com/rabdi.jpg",
+      "isPublished": true
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 4,
+    "fields": {
+      "dishId": "4",
+      "dishName": "Chicken Biryani",
+      "imageUrl": "https://nosh-assignment.s3.ap-south-1.amazonaws.com/chicken-biryani.jpg",
+      "isPublished": true
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 5,
+    "fields": {
+      "dishId": "5",
+      "dishName": "Alfredo Pasta",
+      "imageUrl": "https://nosh-assignment.s3.ap-south-1.amazonaws.com/alfredo-pasta.jpg",
+      "isPublished": true
+    }
+  }
+]
