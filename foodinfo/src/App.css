@@ -1,0 +1,81 @@
+
+
+.dish-item-background {
+  background-image: url('./image.jpg');  /* Replace 'path_to_your_image.jpg' with your image path */
+}
+
+/* App.css */
+
+/* Styles for the main App container */
+.App {
+  position: relative;  /* Ensure relative positioning for absolute elements */
+}
+
+/* Styles for the background container */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;  /* Ensure no overflow beyond viewport */
+}
+
+/* Style for the blurred overlay */
+.blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent grey overlay */
+}
+
+/* Style for the background image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  filter: blur(10px);  /* Apply blur effect to the background image */
+  z-index: -1;  /* Move the background image behind other content */
+}
+
+/* Styles for the content */
+.content {
+  position: relative;  /* Ensure relative positioning for absolute elements */
+  z-index: 1;  /* Ensure content is above the background */
+  padding: 20px;  /* Adjust padding as needed */
+}
+body {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.dish-item {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust opacity here */
+  z-index: 1; /* Ensure the overlay is above the content */
+  border-radius: 50px; /* Optional: Add rounded corners */
+}
+
+.overlay > * {
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+}
