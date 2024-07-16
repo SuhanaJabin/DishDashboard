@@ -17,7 +17,7 @@ class DishViewSet(viewsets.ModelViewSet):
 @api_view(['POST'])
 def toggle_publish(request, id):
     dish = get_object_or_404(Dish, pk=id)
-    dish.isPublished = not dish.isPublished  # Toggle the value
+    dish.isPublished = not dish.isPublished  
     dish.save()
     serializer = DishSerializer(dish)
     return Response(serializer.data)

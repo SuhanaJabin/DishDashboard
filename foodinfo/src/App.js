@@ -2,7 +2,6 @@ import React from 'react';
 import DishList from './DishList';
 import './App.css';  // Ensure your App.css file is correctly imported
 
-// Import the image you want to use as background
 import Image from './image.jpg';
 
 const App = () => {

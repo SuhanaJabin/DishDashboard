@@ -14,7 +14,7 @@ const DishList = () => {
   const fetchDishes = async () => {
     try {
       const response = await axios.get('http://127.0.0.1:8000/api/dishes/?format=json');
-      setDishes(response.data); // Assuming response.data is an array of dishes
+      setDishes(response.data); 
     } catch (error) {
       console.error('Error fetching dishes:', error);
     }

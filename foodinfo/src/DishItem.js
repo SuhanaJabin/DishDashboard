@@ -5,7 +5,7 @@ const DishItem = ({ dish, togglePublish }) => {
     display: 'inline-block',
     margin: '10px',
     textAlign: 'center',
-    position: 'relative', // Ensure position relative for overlay positioning
+    position: 'relative', 
   };
 
   const imageStyle = {
